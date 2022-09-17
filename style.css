@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #afc5d3;
+}
+
+#main {
+    width: 80%;
+    margin: 0px auto;
+    height: max-content;
+    margin-top: 20px;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    display: none;
+}
+
+#fpage {
+    width: 40%;
+    height: 300px;
+    margin: 0px auto;
+    margin-top: 150px;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    color: black;
+}
+
+#saperator {
+    margin-top: 20px !important;
+    height: 1px;
+    width: 100%;
+    margin: 25px 0px;
+    background: black;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#saperator::before {
+    content: "Today's Weather";
+    color: black;
+    font-size: 19px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#saperator_weather {
+    margin-top: 80px !important;
+    height: 1px;
+    width: 100%;
+    margin: 25px 0px;
+    background: black;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#saperator_weather::before {
+    content: "Today's Weather Highlight";
+    color: black;
+    font-size: 19px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid black;
+}
+
+#weatherUpdate {
+    width: 100%;
+    height: 240px;
+    display: flex;
+
+}
+
+#image,
+#temp,
+#cityndate {
+    height: 240px;
+    margin: 20px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    background-color: white;
+    border-radius: 6px;
+}
+
+#image,
+#temp {
+    width: 40%;
+}
+
+#cityndate {
+    width: 20%;
+    text-align: center;
+}
+
+#todayHighlight {
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 30px;
+
+}
+
+#first_three,
+#last_three {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    margin: 5px;
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6 {
+    width: 33%;
+    height: 120px;
+    justify-content: space-around;
+    margin: 15px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+#div1:hover,
+#div2:hover,
+#div3:hover,
+#div4:hover,
+#div5:hover,
+#div6:hover {
+    animation-name: anim;
+    animation-duration: 2s;
+}
+
+@keyframes anim {
+    100% {
+        scale: 1.1;
+    }
+
+    0% {
+        scale: 1;
+    }
+}
+
+#tempDeg {
+    font-size: 50px;
+}
+
+#heading {
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#search {
+    width: 45%;
+    height: 35px;
+    font-size: 16px;
+    padding-left: 35px;
+    margin-top: 45px;
+    color: black;
+}
+
+#btn_srch {
+    font-size: 17px;
+    background: none;
+    height: 40px;
+    width: 100px;
+    margin-left: 10px !important;
+    cursor: pointer;
+}
+
+#btn_srch:hover {
+    background: none;
+}
+
+/* Loader */
+
+#loader {
+    width: 30%;
+    height: 100px;
+    border: 1px solid black;
+    text-align: center;
+    position: relative;
+    left: 35%;
+    top: 25%;
+    background-color: white;
+    color: black;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#full {
+    display: none;
+    height: 1000px;
+    width: 100%;
+    background-color: #afc5d3;
+}
